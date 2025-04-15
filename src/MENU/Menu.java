@@ -42,39 +42,13 @@ private void InitContent() {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jToggleButton3 = new javax.swing.JToggleButton();
         jToggleButton4 = new javax.swing.JToggleButton();
         nBudgetButton = new javax.swing.JToggleButton();
         jToggleButton5 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
         jButton1 = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        INICIO_TAB_SCROLLPANE = new javax.swing.JScrollPane();
-        Home_tab = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        balanceLabel = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        liabilitiesLabel = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
-        incomeLabel = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        expenseLabel = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel31 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        transactionTable = new javax.swing.JTable();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel41 = new javax.swing.JLabel();
-        jProgressBar1 = new javax.swing.JProgressBar();
-        progressLabel = new javax.swing.JLabel();
         CUENTAS_TAB = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -158,82 +132,37 @@ private void InitContent() {
         jLabel42 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         budgetTable = new javax.swing.JTable();
+        INICIO_TAB_SCROLLPANE = new javax.swing.JScrollPane();
+        Home_tab = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        balanceLabel = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        liabilitiesLabel = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        incomeLabel = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        expenseLabel = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        transactionTable = new javax.swing.JTable();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
+        progressLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 0));
-
-        jToggleButton4.setBackground(new java.awt.Color(204, 0, 0));
-        jToggleButton4.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
-        jToggleButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jToggleButton4.setText("Ingresos");
-        jToggleButton4.setBorder(null);
-        jToggleButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jToggleButton4.setMaximumSize(new java.awt.Dimension(33, 16));
-        jToggleButton4.setMinimumSize(new java.awt.Dimension(33, 16));
-        jToggleButton4.setPreferredSize(new java.awt.Dimension(33, 16));
-        jToggleButton4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jToggleButton4MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jToggleButton4MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jToggleButton4MouseExited(evt);
-            }
-        });
-        jToggleButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton4ActionPerformed(evt);
-            }
-        });
-
-        nBudgetButton.setBackground(new java.awt.Color(204, 0, 0));
-        nBudgetButton.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
-        nBudgetButton.setForeground(new java.awt.Color(255, 255, 255));
-        nBudgetButton.setText("Presupuesto");
-        nBudgetButton.setBorder(null);
-        nBudgetButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        nBudgetButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                nBudgetButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                nBudgetButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                nBudgetButtonMouseExited(evt);
-            }
-        });
-        nBudgetButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nBudgetButtonActionPerformed(evt);
-            }
-        });
-
-        jToggleButton5.setBackground(new java.awt.Color(204, 0, 0));
-        jToggleButton5.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
-        jToggleButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jToggleButton5.setText("Gastos");
-        jToggleButton5.setBorder(null);
-        jToggleButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jToggleButton5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jToggleButton5MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jToggleButton5MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jToggleButton5MouseExited(evt);
-            }
-        });
-        jToggleButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton5ActionPerformed(evt);
-            }
-        });
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jToggleButton2.setBackground(new java.awt.Color(204, 0, 0));
         jToggleButton2.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
@@ -259,6 +188,7 @@ private void InitContent() {
                 jToggleButton2ActionPerformed(evt);
             }
         });
+        jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 130));
 
         jToggleButton3.setBackground(new java.awt.Color(204, 0, 0));
         jToggleButton3.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
@@ -285,10 +215,87 @@ private void InitContent() {
                 jToggleButton3ActionPerformed(evt);
             }
         });
+        jPanel1.add(jToggleButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, 262, 130));
+
+        jToggleButton4.setBackground(new java.awt.Color(204, 0, 0));
+        jToggleButton4.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
+        jToggleButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton4.setText("Ingresos");
+        jToggleButton4.setBorder(null);
+        jToggleButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jToggleButton4.setMaximumSize(new java.awt.Dimension(33, 16));
+        jToggleButton4.setMinimumSize(new java.awt.Dimension(33, 16));
+        jToggleButton4.setPreferredSize(new java.awt.Dimension(33, 16));
+        jToggleButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jToggleButton4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jToggleButton4MouseExited(evt);
+            }
+        });
+        jToggleButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 264, 130));
+
+        nBudgetButton.setBackground(new java.awt.Color(204, 0, 0));
+        nBudgetButton.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
+        nBudgetButton.setForeground(new java.awt.Color(255, 255, 255));
+        nBudgetButton.setText("Presupuesto");
+        nBudgetButton.setBorder(null);
+        nBudgetButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nBudgetButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                nBudgetButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                nBudgetButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                nBudgetButtonMouseExited(evt);
+            }
+        });
+        nBudgetButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nBudgetButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nBudgetButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(764, 0, 270, 130));
+
+        jToggleButton5.setBackground(new java.awt.Color(204, 0, 0));
+        jToggleButton5.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
+        jToggleButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton5.setText("Gastos");
+        jToggleButton5.setBorder(null);
+        jToggleButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jToggleButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jToggleButton5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jToggleButton5MouseExited(evt);
+            }
+        });
+        jToggleButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1034, 0, 190, 130));
 
         jButton1.setBackground(new java.awt.Color(204, 0, 0));
+        jButton1.setFont(new java.awt.Font("Lucida Bright", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Logout");
+        jButton1.setText("Cerrar Sesión");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -303,180 +310,10 @@ private void InitContent() {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(nBudgetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jToggleButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(nBudgetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jToggleButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 40, 190, 60));
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel7.setBackground(new java.awt.Color(234, 216, 192));
-        jPanel7.setLayout(null);
-
-        balanceLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        balanceLabel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                balanceLabelActionPerformed(evt);
-            }
-        });
-        jPanel7.add(balanceLabel);
-        balanceLabel.setBounds(30, 100, 130, 30);
-
-        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel9.setText("Current Balance");
-        jPanel7.add(jLabel9);
-        jLabel9.setBounds(30, 60, 140, 40);
-        jPanel7.add(jLabel20);
-        jLabel20.setBounds(60, 10, 70, 60);
-
-        jPanel6.setBackground(new java.awt.Color(253, 153, 153));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        liabilitiesLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel6.add(liabilitiesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 140, 30));
-
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel10.setText("Liabilites");
-        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
-        jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 70, 60));
-
-        jPanel8.setBackground(new java.awt.Color(188, 127, 205));
-        jPanel8.setLayout(null);
-
-        incomeLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel8.add(incomeLabel);
-        incomeLabel.setBounds(30, 100, 130, 30);
-
-        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel11.setText("Month's Income");
-        jPanel8.add(jLabel11);
-        jLabel11.setBounds(30, 60, 140, 40);
-        jPanel8.add(jLabel14);
-        jLabel14.setBounds(60, 10, 80, 60);
-
-        jPanel9.setBackground(new java.awt.Color(116, 140, 241));
-        jPanel9.setLayout(null);
-
-        expenseLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel9.add(expenseLabel);
-        expenseLabel.setBounds(30, 100, 130, 30);
-
-        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel12.setText("Month's Expense");
-        jPanel9.add(jLabel12);
-        jLabel12.setBounds(20, 60, 160, 40);
-        jPanel9.add(jLabel4);
-        jLabel4.setBounds(60, 20, 70, 50);
-
-        jButton2.setBackground(new java.awt.Color(55, 98, 217));
-        jButton2.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Generate Chart");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel31.setText("Transactions");
-
-        transactionTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "Transaction Id", "Account Id", "Transaction Type", "Amount", "Statement", "Date"
-            }
-        ));
-        jScrollPane3.setViewportView(transactionTable);
-
-        jPanel2.setBackground(new java.awt.Color(214, 214, 214));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel41.setText("Monthly Savings:");
-        jPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 20));
-
-        jProgressBar1.setForeground(new java.awt.Color(33, 225, 65));
-        jPanel2.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 180, 20));
-
-        progressLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        progressLabel.setText("No Data Available");
-        jPanel2.add(progressLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 130, -1));
-
-        javax.swing.GroupLayout Home_tabLayout = new javax.swing.GroupLayout(Home_tab);
-        Home_tab.setLayout(Home_tabLayout);
-        Home_tabLayout.setHorizontalGroup(
-            Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Home_tabLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Home_tabLayout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Home_tabLayout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 790, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-        Home_tabLayout.setVerticalGroup(
-            Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Home_tabLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        INICIO_TAB_SCROLLPANE.setViewportView(Home_tab);
-
-        jTabbedPane1.addTab("Home", INICIO_TAB_SCROLLPANE);
+        jTabbedPane1.setPreferredSize(new java.awt.Dimension(1400, 900));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("Delete Account");
@@ -585,8 +422,9 @@ private void InitContent() {
                     .addComponent(deleteAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Accounts", CUENTAS_TAB);
@@ -723,7 +561,7 @@ private void InitContent() {
         Income_tabLayout.setVerticalGroup(
             Income_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Income_tabLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
+                .addContainerGap()
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1140,117 +978,172 @@ private void InitContent() {
 
         jTabbedPane1.addTab("Budget", PRESUPUESTOS_TAB_SCROLLPANE);
 
+        jPanel7.setBackground(new java.awt.Color(234, 216, 192));
+        jPanel7.setLayout(null);
+
+        balanceLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        balanceLabel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                balanceLabelActionPerformed(evt);
+            }
+        });
+        jPanel7.add(balanceLabel);
+        balanceLabel.setBounds(30, 100, 130, 30);
+
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel9.setText("Current Balance");
+        jPanel7.add(jLabel9);
+        jLabel9.setBounds(30, 60, 140, 40);
+        jPanel7.add(jLabel20);
+        jLabel20.setBounds(60, 10, 70, 60);
+
+        jPanel6.setBackground(new java.awt.Color(253, 153, 153));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        liabilitiesLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jPanel6.add(liabilitiesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 140, 30));
+
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel10.setText("Liabilites");
+        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
+        jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 70, 60));
+
+        jPanel8.setBackground(new java.awt.Color(188, 127, 205));
+        jPanel8.setLayout(null);
+
+        incomeLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jPanel8.add(incomeLabel);
+        incomeLabel.setBounds(30, 100, 130, 30);
+
+        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel11.setText("Month's Income");
+        jPanel8.add(jLabel11);
+        jLabel11.setBounds(30, 60, 140, 40);
+        jPanel8.add(jLabel14);
+        jLabel14.setBounds(60, 10, 80, 60);
+
+        jPanel9.setBackground(new java.awt.Color(116, 140, 241));
+        jPanel9.setLayout(null);
+
+        expenseLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jPanel9.add(expenseLabel);
+        expenseLabel.setBounds(30, 100, 130, 30);
+
+        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel12.setText("Month's Expense");
+        jPanel9.add(jLabel12);
+        jLabel12.setBounds(20, 60, 160, 40);
+        jPanel9.add(jLabel4);
+        jLabel4.setBounds(60, 20, 70, 50);
+
+        jButton2.setBackground(new java.awt.Color(55, 98, 217));
+        jButton2.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Generate Chart");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel31.setText("Transactions");
+
+        transactionTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Transaction Id", "Account Id", "Transaction Type", "Amount", "Statement", "Date"
+            }
+        ));
+        jScrollPane3.setViewportView(transactionTable);
+
+        jPanel2.setBackground(new java.awt.Color(214, 214, 214));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel41.setText("Monthly Savings:");
+        jPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 20));
+
+        jProgressBar1.setForeground(new java.awt.Color(33, 225, 65));
+        jPanel2.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 180, 20));
+
+        progressLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        progressLabel.setText("No Data Available");
+        jPanel2.add(progressLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 130, -1));
+
+        javax.swing.GroupLayout Home_tabLayout = new javax.swing.GroupLayout(Home_tab);
+        Home_tab.setLayout(Home_tabLayout);
+        Home_tabLayout.setHorizontalGroup(
+            Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Home_tabLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Home_tabLayout.createSequentialGroup()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 790, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Home_tabLayout.createSequentialGroup()
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(578, Short.MAX_VALUE))
+        );
+        Home_tabLayout.setVerticalGroup(
+            Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Home_tabLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(Home_tabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        INICIO_TAB_SCROLLPANE.setViewportView(Home_tab);
+
+        jTabbedPane1.addTab("Home", INICIO_TAB_SCROLLPANE);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1073, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton2MouseClicked
-
-    private void jToggleButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton2MouseEntered
-
-    private void jToggleButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton2MouseExited
-
-    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton2ActionPerformed
-
-    private void jToggleButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton3MouseClicked
-
-    private void jToggleButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton3MouseEntered
-
-    private void jToggleButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton3MouseExited
-
-    private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton3ActionPerformed
-
-    private void jToggleButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton4MouseClicked
-
-    private void jToggleButton4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton4MouseEntered
-
-    private void jToggleButton4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton4MouseExited
-
-    private void jToggleButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton5MouseClicked
-
-    private void jToggleButton5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton5MouseEntered
-
-    private void jToggleButton5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton5MouseExited
-
-    private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton5ActionPerformed
-
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseEntered
-
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseExited
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void nBudgetButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nBudgetButtonMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nBudgetButtonMouseClicked
-
-    private void nBudgetButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nBudgetButtonMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nBudgetButtonMouseEntered
-
-    private void nBudgetButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nBudgetButtonMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nBudgetButtonMouseExited
-
-    private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton4ActionPerformed
-
-    private void nBudgetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nBudgetButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nBudgetButtonActionPerformed
 
     private void balanceLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_balanceLabelActionPerformed
         // TODO add your handling code here:
@@ -1347,6 +1240,98 @@ private void InitContent() {
     private void addTargetAmountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addTargetAmountButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addTargetAmountButtonActionPerformed
+
+    private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton3ActionPerformed
+
+    private void jToggleButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton3MouseExited
+
+    private void jToggleButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton3MouseEntered
+
+    private void jToggleButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton3MouseClicked
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
+
+    private void jToggleButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2MouseExited
+
+    private void jToggleButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2MouseEntered
+
+    private void jToggleButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2MouseClicked
+
+    private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton5ActionPerformed
+
+    private void jToggleButton5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton5MouseExited
+
+    private void jToggleButton5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton5MouseEntered
+
+    private void jToggleButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton5MouseClicked
+
+    private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton4ActionPerformed
+
+    private void jToggleButton4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton4MouseExited
+
+    private void jToggleButton4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton4MouseEntered
+
+    private void jToggleButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton4MouseClicked
+
+    private void nBudgetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nBudgetButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nBudgetButtonActionPerformed
+
+    private void nBudgetButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nBudgetButtonMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nBudgetButtonMouseExited
+
+    private void nBudgetButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nBudgetButtonMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nBudgetButtonMouseEntered
+
+    private void nBudgetButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nBudgetButtonMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nBudgetButtonMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseExited
+
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseEntered
 
     /**
      * @param args the command line arguments
