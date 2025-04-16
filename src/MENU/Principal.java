@@ -143,7 +143,6 @@ public class Principal extends javax.swing.JFrame {
         expenseAmount = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1530, 900));
         setMinimumSize(new java.awt.Dimension(1530, 900));
 
         barra_superior.setBackground(new java.awt.Color(204, 0, 0));
@@ -511,7 +510,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel21.setFont(new java.awt.Font("Segoe UI Emoji", 1, 24)); // NOI18N
-        jLabel21.setText("Income");
+        jLabel21.setText("INGRESOS");
         jPanel12.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 170, 50));
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -676,8 +675,8 @@ public class Principal extends javax.swing.JFrame {
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel32.setFont(new java.awt.Font("Segoe UI Emoji", 1, 24)); // NOI18N
-        jLabel32.setText("Add Budget");
-        jPanel14.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 170, 50));
+        jLabel32.setText("AÑADIR PRESUPUESTO");
+        jPanel14.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 300, 50));
         jPanel14.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, -30, -1, -1));
 
         jLabel33.setText("A budget helps users allocate their income to different categories for effective financial management and goal achievement.");
@@ -876,7 +875,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Emoji", 1, 24)); // NOI18N
-        jLabel13.setText("Add Expenses");
+        jLabel13.setText("AÑADIR GASTOS");
         jPanel10.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 170, 50));
         jPanel10.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, -30, -1, -1));
 
