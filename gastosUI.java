@@ -10,87 +10,9 @@ public class gastosUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
+        getContentPane().setBackground(new Color(255, 230, 230)); // Fondo rojo claro
 
-        // ----------- MENÚ SUPERIOR ------------
-        JPanel topBar = crearTopBar();
-
-        // ----------- TÍTULO ------------
-        JLabel titulo = new JLabel("Gastos", SwingConstants.CENTER);
-        titulo.setFont(new Font("Serif", Font.BOLD, 28));
-        titulo.setForeground(new Color(36, 36, 70));
-        titulo.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
-
-        // ----------- PANEL DE FORMULARIO ------------
-        JPanel panelContenedor = new JPanel();
-        panelContenedor.setBackground(new Color(239, 239, 239));
-        panelContenedor.setLayout(new GridBagLayout());
-
-        JPanel formulario = new JPanel(new GridBagLayout());
-        formulario.setBackground(new Color(223, 222, 239));
-        formulario.setBorder(BorderFactory.createEmptyBorder(30, 40, 30, 40));
-
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(10, 10, 10, 10);
-        gbc.anchor = GridBagConstraints.WEST;
-
-        // Componentes del formulario
-        gbc.gridx = 0; gbc.gridy = 0;
-        formulario.add(new JLabel("Fecha:"), gbc);
-        gbc.gridx = 1;
-        formulario.add(crearCampoTexto("Seleccionar fecha"), gbc);
-
-        gbc.gridx = 0; gbc.gridy = 1;
-        formulario.add(new JLabel("Cuenta:"), gbc);
-        gbc.gridx = 1;
-        formulario.add(crearComboBox(), gbc);
-
-        gbc.gridx = 0; gbc.gridy = 2;
-        formulario.add(new JLabel("Categoría:"), gbc);
-        gbc.gridx = 1;
-        formulario.add(crearComboBox(), gbc);
-
-        gbc.gridx = 2; gbc.gridy = 2;
-        formulario.add(new JLabel("Nueva categoría:"), gbc);
-        gbc.gridx = 3;
-        formulario.add(crearCampoTexto(""), gbc);
-        gbc.gridx = 4;
-        formulario.add(crearBotonNegro("Agregar"), gbc);
-
-        gbc.gridx = 0; gbc.gridy = 3;
-        formulario.add(new JLabel("Monto:"), gbc);
-        gbc.gridx = 1;
-        formulario.add(crearCampoTexto(""), gbc);
-
-        gbc.gridx = 0; gbc.gridy = 4;
-        formulario.add(new JLabel("Descripción:"), gbc);
-        gbc.gridx = 1;
-        gbc.gridwidth = 3;
-        formulario.add(crearCampoTexto(""), gbc);
-
-        // Botones
-        JPanel botonesPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 20, 10));
-        botonesPanel.setBackground(new Color(223, 222, 239));
-        botonesPanel.add(crearBotonNegro("Agregar Categoría"));
-        botonesPanel.add(crearBotonNegro("Guardar Gasto"));
-        botonesPanel.add(crearBotonNegro("Restablecer"));
-
-        // Tabla de gastos
-        String[] columnas = {"Fecha", "Cuenta", "Categoría", "Monto", "Descripción"};
-        Object[][] datos = {};
-        JTable tablaGastos = new JTable(new DefaultTableModel(datos, columnas));
-        JScrollPane scrollPane = new JScrollPane(tablaGastos);
-        scrollPane.setPreferredSize(new Dimension(900, 200));
-
-        // Organización final
-        panelContenedor.add(formulario);
-        add(topBar, BorderLayout.NORTH);
-        add(titulo, BorderLayout.CENTER);
-        add(panelContenedor, BorderLayout.NORTH);
-        add(scrollPane, BorderLayout.CENTER);
-        add(botonesPanel, BorderLayout.SOUTH);
-    }
-
-    private JPanel crearTopBar() {
+        //  MENU 
         JPanel topBar = new JPanel();
         topBar.setLayout(new BoxLayout(topBar, BoxLayout.X_AXIS));
         topBar.setBackground(new Color(200, 0, 0));
@@ -98,63 +20,107 @@ public class gastosUI extends JFrame {
         String[] menuItems = {"Inicio", "Cuentas", "Ingresos", "Gastos", "Presupuesto"};
         for (String item : menuItems) {
             JButton btn = new JButton(item);
-            estilizarBotonMenu(btn);
+            btn.setForeground(Color.WHITE);
+            btn.setBackground(new Color(200, 0, 0));
+            btn.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
             topBar.add(btn);
         }
 
-        topBar.add(Box.createHorizontalGlue());
+        // PRINCIPAL 
+        JPanel mainPanel = new JPanel(new GridLayout(3, 1, 20, 20));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        mainPanel.setBackground(new Color(255, 230, 230));
 
-        JButton cerrarSesion = crearBotonNegro("Cerrar sesión");
-        cerrarSesion.setFont(new Font("Arial", Font.BOLD, 14));
-        cerrarSesion.setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
-        topBar.add(cerrarSesion);
+        JPanel formPanel = new JPanel(new GridLayout(4, 2, 15, 15));
+        formPanel.setBackground(new Color(255, 245, 245));
+        formPanel.setBorder(BorderFactory.createTitledBorder("Detalles del Gasto"));
 
-        return topBar;
+        addFormField(formPanel, "Fecha:", crearCampoFecha());
+        addFormField(formPanel, "Cuenta:", crearComboBox());
+        addFormField(formPanel, "Categoría:", crearComboBox());
+        addFormField(formPanel, "Monto:", crearCampoTexto(""));
+
+        JPanel newCategoryPanel = new JPanel(new GridLayout(2, 2, 15, 15));
+        newCategoryPanel.setBackground(new Color(255, 245, 245));
+        newCategoryPanel.setBorder(BorderFactory.createTitledBorder("Nueva Categoría"));
+
+        addFormField(newCategoryPanel, "Nombre:", crearCampoTexto(""));
+        addFormField(newCategoryPanel, "Nota:", crearCampoTexto(""));
+
+        JPanel actionPanel = new JPanel(new BorderLayout(20, 20));
+        
+        // botones
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 30, 10));
+        buttonPanel.add(crearBotonRojo("Guardar categoría"));
+        buttonPanel.add(crearBotonRojo("Guardar gasto"));
+        
+        // tabla
+        String[] columnas = {"Cuenta", "Categoría", "Monto", "Fecha", "Nota"};
+        JTable tabla = new JTable(new DefaultTableModel(columnas, 0));
+        JScrollPane scrollPane = new JScrollPane(tabla);
+        
+        actionPanel.add(buttonPanel, BorderLayout.NORTH);
+        actionPanel.add(scrollPane, BorderLayout.CENTER);
+
+        // ensamblado final
+        mainPanel.add(formPanel);
+        mainPanel.add(newCategoryPanel);
+        mainPanel.add(actionPanel);
+
+        add(topBar, BorderLayout.NORTH);
+        add(mainPanel, BorderLayout.CENTER);
     }
 
-    private JTextField crearCampoTexto(String texto) {
-        JTextField campo = new JTextField(texto);
+    private void addFormField(JPanel panel, String label, Component field) {
+        JPanel container = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        container.setBackground(panel.getBackground());
+        container.add(new JLabel(label));
+        container.add(field);
+        panel.add(container);
+    }
+
+    private JTextField crearCampoFecha() {
+        JTextField campo = new JTextField("Seleccionar fecha");
         campo.setPreferredSize(new Dimension(200, 30));
-        campo.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 1));
-        campo.setBackground(Color.WHITE);
-        campo.setFont(new Font("Arial", Font.PLAIN, 14));
-        campo.setForeground(Color.GRAY);
+        campo.setBorder(BorderFactory.createCompoundBorder(
+            BorderFactory.createLineBorder(new Color(200, 0, 0)),
+            BorderFactory.createEmptyBorder(5, 10, 5, 10)
+        ));
         return campo;
     }
 
     private JComboBox<String> crearComboBox() {
-        JComboBox<String> combo = new JComboBox<>(new String[]{"-- Seleccionar --"});
+        JComboBox<String> combo = new JComboBox<>(new String[]{"Seleccionar"});
         combo.setPreferredSize(new Dimension(200, 30));
         combo.setBackground(Color.WHITE);
+        combo.setBorder(BorderFactory.createLineBorder(new Color(200, 0, 0)));
         return combo;
     }
 
-    private JButton crearBotonNegro(String texto) {
+    private JTextField crearCampoTexto(String placeholder) {
+        JTextField campo = new JTextField(placeholder);
+        campo.setPreferredSize(new Dimension(200, 30));
+        campo.setBorder(BorderFactory.createCompoundBorder(
+            BorderFactory.createLineBorder(new Color(200, 0, 0)),
+            BorderFactory.createEmptyBorder(5, 10, 5, 10)
+        ));
+        return campo;
+    }
+
+    private JButton crearBotonRojo(String texto) {
         JButton boton = new JButton(texto);
-        boton.setBackground(Color.BLACK);
+        boton.setBackground(new Color(200, 0, 0));
         boton.setForeground(Color.WHITE);
-        boton.setFocusPainted(false);
-        boton.setFont(new Font("Arial", Font.PLAIN, 14));
+        boton.setFont(new Font("Arial", Font.BOLD, 14));
         boton.setBorder(BorderFactory.createCompoundBorder(
-            BorderFactory.createLineBorder(Color.DARK_GRAY),
-            BorderFactory.createEmptyBorder(10, 20, 10, 20)
+            BorderFactory.createLineBorder(Color.WHITE, 2),
+            BorderFactory.createEmptyBorder(10, 30, 10, 30)
         ));
         boton.setCursor(new Cursor(Cursor.HAND_CURSOR));
         return boton;
     }
 
-    private void estilizarBotonMenu(JButton btn) {
-        btn.setFocusPainted(false);
-        btn.setForeground(Color.WHITE);
-        btn.setBackground(new Color(200, 0, 0));
-        btn.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
-        btn.setFont(new Font("Arial", Font.BOLD, 14));
-        btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
-    }
-
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new gastosUI().setVisible(true);
-        });
+        SwingUtilities.invokeLater(() -> new gastosUI().setVisible(true));
     }
 }
