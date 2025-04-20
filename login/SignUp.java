@@ -65,7 +65,6 @@ public class SignUp extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
         jPanel1.setLayout(null);
 
-
         jPanel3.setBackground(new java.awt.Color(187, 36, 39));
         
         jLabel4.setBackground(new java.awt.Color(69, 6, 7));
